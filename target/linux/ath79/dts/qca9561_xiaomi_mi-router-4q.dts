@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0+ OR MIT
+// SPDX-License-Identifier: GPL-2.0-or-later OR MIT
 /dts-v1/;
 
 #include <dt-bindings/gpio/gpio.h>
@@ -15,10 +15,6 @@
 		led-failsafe = &led_red;
 		led-running = &led_blue;
 		led-upgrade = &led_red;
-	};
-
-	chosen {
-		bootargs = "console=ttyS0,115200n8";
 	};
 
 	keys {
@@ -58,10 +54,6 @@
 };
 
 &uart {
-	status = "okay";
-};
-
-&gpio {
 	status = "okay";
 };
 
