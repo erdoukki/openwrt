@@ -1078,6 +1078,15 @@ define Device/vonets_var11n-300
 endef
 TARGET_DEVICES += vonets_var11n-300
 
+define Device/wavlink_wl-wn530hg4
+  SOC := mt7620a
+  IMAGE_SIZE := 7872k
+  DEVICE_VENDOR := Wavlink
+  DEVICE_MODEL := WL-WN530HG4
+  DEVICE_PACKAGES := kmod-mt76x2
+endef
+TARGET_DEVICES += wavlink_wl-wn530hg4
+
 define Device/wrtnode_wrtnode
   SOC := mt7620n
   IMAGE_SIZE := 16064k
@@ -1166,8 +1175,7 @@ define Device/zbtlink_zbt-we1026-h-32m
   DEVICE_VENDOR := Zbtlink
   DEVICE_MODEL := ZBT-WE1026-H
   DEVICE_VARIANT := 32M
-  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 \
-	kmod-ledtrig-netdev
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620
 endef
 TARGET_DEVICES += zbtlink_zbt-we1026-h-32m
 
